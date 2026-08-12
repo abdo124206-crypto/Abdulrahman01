@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#100b18">
+  <title>إلى (اسمها) ❤️ | Birthday Surprise</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="cursor-glow"></div>
+  <div class="hearts" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <a class="brand" href="#home">A<span>♥</span></a>
+    <button class="music-btn" id="musicBtn" type="button" aria-label="تشغيل الموسيقى">♫</button>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content reveal">
+        <p class="eyebrow">A LITTLE SURPRISE FOR</p>
+        <div class="initials">
+          <span>(أول حرف من اسمه)</span>
+          <b>×</b>
+          <span>(أول حرف من اسمها)</span>
+        </div>
+        <h1>كل سنة وإنتِ<br><em>(اسمها)</em> ❤️</h1>
+        <p class="hero-text">في حاجة صغيرة معمولة مخصوص عشانك... بس قبل ما تبدأي، عندي سؤال.</p>
+        <button class="primary-btn" id="startBtn">افتحي المفاجأة <span>↓</span></button>
+      </div>
+      <div class="hero-photo reveal delay-1">
+        <div class="photo-frame">
+          <img src="assets/photo.webp" alt="(صورة)">
+          <span class="stamp">MADE WITH<br>LOVE</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="countdown-section reveal" id="countdown">
+      <p class="eyebrow">COUNTING DOWN TO YOUR DAY</p>
+      <h2>الوقت بيقرب... 🎂</h2>
+      <div class="countdown">
+        <div><strong id="days">00</strong><span>يوم</span></div>
+        <div><strong id="hours">00</strong><span>ساعة</span></div>
+        <div><strong id="minutes">00</strong><span>دقيقة</span></div>
+        <div><strong id="seconds">00</strong><span>ثانية</span></div>
+      </div>
+      <p class="muted">الموعد: (تاريخ ميلادها)</p>
+    </section>
+
+    <section class="story" id="story">
+      <div class="section-heading reveal">
+        <span>01</span>
+        <div><p class="eyebrow">OUR LITTLE STORY</p><h2>حكايتنا في كام لحظة ❤️</h2></div>
+      </div>
+
+      <div class="timeline">
+        <article class="memory reveal">
+          <div class="memory-photo"><img src="assets/photo.webp" alt="(صورة)"></div>
+          <div class="memory-copy">
+            <span>(تاريخ الذكرى الأولى)</span>
+            <h3>أول مرة اتكلمنا</h3>
+            <p>(وصف الذكرى الأولى بينهما)</p>
+          </div>
+        </article>
+
+        <article class="memory reverse reveal">
+          <div class="memory-photo"><img src="assets/photo.webp" alt="(صورة)"></div>
+          <div class="memory-copy">
+            <span>(تاريخ الذكرى الثانية)</span>
+            <h3>اليوم اللي مش هيتنسي</h3>
+            <p>(وصف موقف مميز بينهما)</p>
+          </div>
+        </article>
+
+        <article class="memory reveal">
+          <div class="memory-photo"><img src="assets/photo.webp" alt="(صورة)"></div>
+          <div class="memory-copy">
+            <span>(تاريخ الذكرى الثالثة)</span>
+            <h3>أحلى صورة</h3>
+            <p>(وصف سبب تميز هذه الصورة أو الذكرى)</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="gallery reveal" id="gallery">
+      <div class="section-heading">
+        <span>02</span>
+        <div><p class="eyebrow">THE LITTLE THINGS</p><h2>ذكريات صغيرة، بس غالية</h2></div>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item tall"><img src="assets/photo.webp" alt="(صورة)"><span>(تعليق على الصورة)</span></div>
+        <div class="gallery-item"><img src="assets/photo.webp" alt="(صورة)"><span>(تعليق على الصورة)</span></div>
+        <div class="gallery-item"><img src="assets/photo.webp" alt="(صورة)"><span>(تعليق على الصورة)</span></div>
+        <div class="gallery-item wide"><img src="assets/photo.webp" alt="(صورة)"><span>(تعليق على الصورة)</span></div>
+      </div>
+    </section>
+
+    <section class="quiz reveal" id="quiz">
+      <div class="quiz-card">
+        <p class="eyebrow">ONE LITTLE GAME</p>
+        <h2>قد إيه فاكرة تفاصيلنا؟ 👀</h2>
+        <p class="quiz-question" id="question">مين قال أول "بحبك"؟</p>
+        <div class="answers" id="answers"></div>
+        <p class="quiz-result" id="quizResult"></p>
+      </div>
+    </section>
+
+    <section class="letter reveal" id="letter">
+      <p class="eyebrow">A LETTER FOR YOU</p>
+      <h2>في رسالة ليكي... 💌</h2>
+      <p class="letter-hint">اضغطي على الظرف</p>
+
+      <button class="envelope" id="envelope" type="button" aria-label="فتح الرسالة">
+        <span class="flap"></span>
+        <span class="heart-seal">♥</span>
+        <span class="paper">OPEN</span>
+      </button>
+
+      <div class="letter-content" id="letterContent">
+        <h3>إلى (اسمها) ❤️</h3>
+        <p>(الرسالة التي يريد إرسالها لها)</p>
+        <p>كل سنة وإنتِ بخير، وكل سنة وإنتِ أقرب وأجمل وأغلى شخص في حياتي.</p>
+        <p>نفسي السنة دي تكون بداية لأيام أحلى بكتير من كل اللي فات.</p>
+        <strong>(توقيع اسمه)</strong>
+      </div>
+    </section>
+
+    <section class="final reveal" id="final">
+      <div class="final-inner">
+        <span class="big-heart">♥</span>
+        <p class="eyebrow">HAPPY BIRTHDAY</p>
+        <h2>كل سنة وإنتِ<br><em>(اسمها)</em></h2>
+        <p>(الجملة الأخيرة الخاصة بينهما)</p>
+        <div class="final-photo"><img src="assets/photo.webp" alt="(صورة)"></div>
+        <p class="signature">— (اسمه)</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>Made with ♥ by (اسمه)</span>
+    <span>(سنة التصميم)</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
